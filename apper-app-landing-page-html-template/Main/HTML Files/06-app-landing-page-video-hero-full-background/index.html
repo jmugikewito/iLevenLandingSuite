@@ -67,19 +67,11 @@
               </li>
               
               <!-- secondery menu start -->
-              <li class="nav-item has_dropdown">
-                <a class="nav-link" href="#">Casos de éxito</a>
-                <span class="drp_btn"><i class="icofont-rounded-down"></i></span>
+                <a class="nav-link" href="#productos" style="white-space: nowrap;">Casos de uso</a>
+          
                 <div class="sub_menu">
                   <ul>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="reviews.html">Reviews</a></li>
-                    <li><a href="contact.html">Contact Us</a></li>
-                    <li><a href="faq.html">Faq</a></li>
-                    <li><a href="sign-in.html">Sign In</a></li>
-                    <li><a href="sign-up.html">Sign Up</a></li>
-                    <li><a href="blog-list.html">Blog List</a></li>
-                    <li><a href="blog-single.html">Blog Single</a></li>
+                   
                   </ul>
                 </div>
               </li>
@@ -91,22 +83,50 @@
 
               <!-- secondery menu start -->
               <li class="nav-item has_dropdown">
-                <a class="nav-link" href="#">Blog</a>
-                <span class="drp_btn"><i class="icofont-rounded-down"></i></span>
+                <a class="nav-link" href="#">Consultas</a>
+                
                 <div class="sub_menu">
                   <ul>
-                    <li><a href="blog-list.html">Blog List</a></li>
-                    <li><a href="blog-single.html">Blog Single</a></li>
                   </ul>
                 </div>
               </li>
               <!-- secondery menu end -->
               
               <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact</a>
+                <a class="nav-link" href="contact.html">Contacto</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link dark_btn" href="contact.html">SOLICITA TU DEMO</a>
+             <a class="nav-link dark_btn demo-btn" href="#contacto">SOLICITA UNA DEMO</a>
+
+<style>
+    .dark_btn.demo-btn {
+        background-color: #6C5CE7;
+        color: white;
+        border: none;
+        padding: 15px 40px;
+        border-radius: 50px;
+        font-weight: 600;
+        font-size: 1rem;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        white-space: nowrap; /* Prevents text from wrapping to a new line */
+        transition: all 0.3s ease-in-out;
+        box-shadow: 0 4px 12px rgba(108, 92, 231, 0.3);
+        text-decoration: none;
+        display: inline-block;
+    }
+
+    .dark_btn.demo-btn:hover {
+        background-color: #5b46e0;
+        transform: translateY(-2px);
+        box-shadow: 0 6px 15px rgba(108, 92, 231, 0.4);
+    }
+
+    .dark_btn.demo-btn:active {
+        transform: translateY(0);
+        box-shadow: 0 2px 8px rgba(108, 92, 231, 0.2);
+    }
+</style>
               </li>
             </ul>
           </div>
@@ -197,7 +217,7 @@
       <div class="container">
         <div class="section_title" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100">
           <!-- h2 -->
-          <h2>¿Tu empresa sigue   <span> gestionando</span>procesos de forma manual y lenta?</h2>
+          <h2>¿Tu empresa sigue   <span> gestionando</span> procesos de forma manual y lenta?</h2>
           <!-- p -->
           <p>Más de 100 empresas han transformado su gestión con ELEVATE, reduciendo costos y acelerando sus decisiones gracias a información en tiempo real.</p>
         </div>
@@ -341,9 +361,9 @@
     <!-- Features-Section-end -->
 
     <!-- About-App-Section-Start -->
-    <section class="row_am interface_section">
+    <section class="row_am interface_section"> 
 	  <!-- container start -->
-   <div class="container-fluid">
+ <div class="container-fluid">
     <div class="section_title" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">
         <h2>Todos tus procesos, <span> en un mismo ecosistema</span></h2>
         <p>
@@ -362,10 +382,9 @@
             <div class="item" data-filter="rrhh calidad">
                 <div class="carousel_card">
                     <div class="card_header">
-                        <span>Público: RRHH, Calidad</span>
                     </div>
                     <div class="card_image">
-                        <img src="images/quest.png" alt="QUEST">
+                        <img src="images/QUEST.jpg" alt="QUEST">
                     </div>
                     <div class="card_content">
                         <h3>QUEST - Cuestionarios y Encuestas</h3>
@@ -380,10 +399,9 @@
             <div class="item" data-filter="rrhh">
                 <div class="carousel_card">
                     <div class="card_header">
-                        <span>Público: RRHH</span>
                     </div>
                     <div class="card_image">
-                        <img src="images/eve.png" alt="EVE">
+                        <img src="images/EVE.jpg" alt="EVE">
                     </div>
                     <div class="card_content">
                         <h3>EVE - Eventos Corporativos</h3>
@@ -398,10 +416,9 @@
             <div class="item" data-filter="rrhh">
                 <div class="carousel_card">
                     <div class="card_header">
-                        <span>Público: RRHH</span>
                     </div>
                     <div class="card_image">
-                        <img src="images/buz.png" alt="BUZ">
+                        <img src="images/BUZ.jpg" alt="BUZ">
                     </div>
                     <div class="card_content">
                         <h3>BUZ - Buzón de Sugerencias</h3>
@@ -416,10 +433,9 @@
             <div class="item" data-filter="finanzas">
                 <div class="carousel_card">
                     <div class="card_header">
-                        <span>Público: Finanzas</span>
                     </div>
                     <div class="card_image">
-                        <img src="images/bud.png" alt="BUD">
+                        <img src="images/BUD.jpg" alt="BUD">
                     </div>
                     <div class="card_content">
                         <h3>BUD - Control Presupuestal</h3>
@@ -434,10 +450,9 @@
             <div class="item" data-filter="finanzas">
                 <div class="carousel_card">
                     <div class="card_header">
-                        <span>Público: Finanzas</span>
                     </div>
                     <div class="card_image">
-                        <img src="images/dga.png" alt="DGA">
+                        <img src="images/DGA.jpg" alt="DGA">
                     </div>
                     <div class="card_content">
                         <h3>DGA - Declaración de Gastos</h3>
@@ -452,10 +467,9 @@
             <div class="item" data-filter="logistica almacen">
                 <div class="carousel_card">
                     <div class="card_header">
-                        <span>Público: Almacén, Logística</span>
                     </div>
                     <div class="card_image">
-                        <img src="images/emat.png" alt="EMAT">
+                        <img src="images/EMAT.jpg" alt="EMAT">
                     </div>
                     <div class="card_content">
                         <h3>EMAT - Entrega de Materiales</h3>
@@ -470,10 +484,9 @@
             <div class="item" data-filter="operaciones">
                 <div class="carousel_card">
                     <div class="card_header">
-                        <span>Público: Operaciones</span>
                     </div>
                     <div class="card_image">
-                        <img src="images/gop.png" alt="GOP">
+                        <img src="images/GOP.jpg" alt="GOP">
                     </div>
                     <div class="card_content">
                         <h3>GOP - Gestión de Procesos</h3>
@@ -488,10 +501,9 @@
             <div class="item" data-filter="almacen">
                 <div class="carousel_card">
                     <div class="card_header">
-                        <span>Público: Almacén</span>
                     </div>
                     <div class="card_image">
-                        <img src="images/inv.png" alt="INV">
+                        <img src="images/INV.jpg" alt="INV">
                     </div>
                     <div class="card_content">
                         <h3>INV - Inventarios</h3>
@@ -506,10 +518,9 @@
             <div class="item" data-filter="seguridad">
                 <div class="carousel_card">
                     <div class="card_header">
-                        <span>Público: Seguridad, Recepción</span>
                     </div>
                     <div class="card_image">
-                        <img src="images/cvi.png" alt="CVI">
+                        <img src="images/CVI.jpg" alt="CVI">
                     </div>
                     <div class="card_content">
                         <h3>CVI - Control de Visitas</h3>
@@ -524,10 +535,9 @@
             <div class="item" data-filter="all">
                 <div class="carousel_card">
                     <div class="card_header">
-                        <span>Público: Todas las áreas</span>
                     </div>
                     <div class="card_image">
-                        <img src="images/doc.png" alt="DOC">
+                        <img src="images/DOC.jpg" alt="DOC">
                     </div>
                     <div class="card_content">
                         <h3>DOC - Gestión Documental</h3>
@@ -552,7 +562,7 @@
 
     /* Estilos globales y de la sección */
     .container-fluid {
-        background-color: #F8F8FF; /* Un tono de blanco roto para un fondo suave */
+        background-color: #F8F8FF;
         padding: 50px 0;
     }
     .section_title {
@@ -566,7 +576,7 @@
         color: #333;
     }
     .section_title h2 span {
-        color: #6C5CE7; /* Un morado más vivo y moderno */
+        color: #6C5CE7;
     }
     .section_title p {
         font-size: 1.1rem;
@@ -631,13 +641,13 @@
         padding: 20px;
     }
     .card_image img {
-        width: 100px; /* Tamaño fijo para que las imágenes se vean uniformes */
+        width: 100px;
         height: auto;
         display: block;
         transition: transform 0.4s ease-in-out;
     }
     .carousel_card:hover .card_image img {
-        transform: scale(1.1); /* Efecto de zoom sutil al pasar el cursor */
+        transform: scale(1.1);
     }
     .card_content {
         padding: 25px;
@@ -716,12 +726,11 @@
 
 <script>
     $(document).ready(function(){
-        // Inicializa el carrusel
         var owl = $('#screen_slider').owlCarousel({
             loop: false,
             margin: 20,
             nav: true,
-            dots: false,
+            dots: false, 
             responsive: {
                 0: {
                     items: 1
@@ -735,24 +744,19 @@
             }
         });
 
-        // Maneja el evento de teclear en el buscador
         $('#search-input').on('keyup', function() {
             var searchTerm = $(this).val().toLowerCase();
 
-            // Oculta todas las tarjetas por defecto
             $('.owl-carousel .item').addClass('filtered-out');
 
-            // Itera sobre cada tarjeta para aplicar la búsqueda
             $('.owl-carousel .item').each(function() {
                 var cardText = $(this).find('h3').text().toLowerCase() + ' ' + $(this).find('p').text().toLowerCase();
                 
-                // Si el texto de la tarjeta contiene el término de búsqueda, la muestra
                 if (cardText.indexOf(searchTerm) !== -1) {
                     $(this).removeClass('filtered-out');
                 }
             });
 
-            // Actualiza el carrusel para que recalcule los elementos visibles
             owl.trigger('refresh.owl.carousel');
         });
     });
@@ -771,25 +775,27 @@
           	<!-- UI content -->
             <div class="ui_text">
               <div class="section_title" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100">
-                <h2>Beautiful design with <span>modern UI</span></h2>
+                <h2>Una solución,<span> múltiples aplicaciones </span></h2>
                 <p>
-                  Lorem Ipsum is simply dummy text of the printing and typesetting industry lorem Ipsum has been the
-                  industrys standard dummy text ever since the when an unknown printer took a galley of type and.
+                  SUITE ELEVATE se adapta a las necesidades de cualquier industria. Descubre cómo ayudamos a empresas como la tuya:
                 </p>
               </div>
               <ul class="design_block">
                 <li data-aos="fade-up" data-aos-duration="1500">
-                  <h4>Carefully designed</h4>
-                  <p>Lorem Ipsum is simply dummy text of the printing and type esetting industry lorem Ipsum has.</p>
+                  <h4>Empresas de Servicios:</h4>
+                  <p>Optimiza la gestión de clientes, contratos y facturación.</p>
                 </li>
                 <li data-aos="fade-up" data-aos-duration="1500">
-                  <h4>Seamless Sync</h4>
-                  <p>Simply dummy text of the printing and typesetting inustry lorem Ipsum has Lorem dollar summit.</p>
+                  <h4>Industria:</h4>
+                  <p>Controla inventarios, producción y seguridad en planta.</p>
                 </li>
                 <li data-aos="fade-up" data-aos-duration="1500">
-                  <h4>Access Drive</h4>
-                  <p>Printing and typesetting industry lorem Ipsum has been the industrys standard dummy text of type
-                    setting.</p>
+                  <h4>Retail:</h4>
+                  <p>Mejora la trazabilidad de productos, ventas y logística.</p>
+                </li>
+                <li data-aos="fade-up" data-aos-duration="1500">
+                  <h4>Recursos Humanos:</h4>
+                  <p>Eleva la productividad y la satisfacción de tu equipo.</p>
                 </li>
               </ul>
             </div>
@@ -822,10 +828,9 @@
         <div class="how_it_inner">
           <div class="section_title" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">
           	<!-- h2 -->
-            <h2>How it works - 3 easy steps</h2>
+            <h2>Tu transformación digital empieza aquí: 3 pasos</h2>
             <!-- p -->
-            <p>Lorem Ipsum is simply dummy text of the printing and typese tting <br> indus orem Ipsum has beenthe
-              standard dummy.</p>
+            <p>Olvídate de procesos largos y complicados. Con ELEVATE, tu empresa se digitaliza y empieza a ver resultados</p>
           </div>
           <div class="step_block">
 
@@ -836,20 +841,18 @@
             	<div class="step_box">
             		<!-- icon -->
 	                <div class="step_img" data-aos="fade-left" data-aos-duration="1500">
-	                  <img src="images/step1.png" alt="image" >
+	                  <img src="images/1.webp" alt="image" >
 	                  <div class="step_number">
 	                  <h3>01</h3>
 	                  </div>
 	                </div>
 	                <!-- text -->
 	                <div class="step_text" data-aos="fade-right" data-aos-duration="1500">
-	                  <h4>Download app</h4>
+	                  <h4>Agenda tu demo gratuita</h4>
 	                  <div class="app_icon">
-	                    <a href="#"><i class="icofont-brand-android-robot"></i></a>
-	                    <a href="#"><i class="icofont-brand-apple"></i></a>
-	                    <a href="#"><i class="icofont-brand-windows"></i></a>
+	                  
 	                  </div>
-	                  <p>Download App either for Windows, Mac or Android</p>
+	                  <p>Déjanos tus datos y un especialista te mostrará cómo ELEVATE puede adaptarse a tu empresa.</p>
 	                </div>
             	</div>
             </div>
@@ -866,9 +869,8 @@
 	                </div>
 	                <!-- text -->
 	                <div class="step_text step2" data-aos="fade-right" data-aos-duration="1500">
-	                  <h4>Create account</h4>
-                  	  <span>14 days free trial</span>
-                  	  <p>Sign up free for App account. One account for all devices.</p>
+	                  <h4>Personaliza tu suite</h4>
+                  	  <p>Selecciona los módulos que mejor se adapten a tus procesos: RRHH, Inventarios, Finanzas, Seguridad y más.</p>
 	                </div>
             	</div>
             </div>
@@ -885,18 +887,39 @@
 	                </div>
 	                <!-- text -->
 	                <div class="step_text step3" data-aos="fade-right" data-aos-duration="1500">
-	                  <h4>It’s done, enjoy the app</h4>
-                  	  <span>Have any questions check our FAQs</span>
-                  	  <p>Get most amazing app experience, Explore and share the app</p>
+	                  <h4>Activa y transforma tu gestión</h4>
+                  	  <p>Digitaliza tu empresa y mide resultados desde el día uno.</p>
 	                </div>
             	</div>
             </div>
-
+           
         </div>
-
+            
           </div>
-        </div>
+                    <div class="col-md-12 text-center">
+    <button class="btn puprple_btn" type="submit">Solicita una DEMO</button>
+</div>
 
+<style>
+    /* Estilos para el botón */
+    .puprple_btn {
+        background-color: white; /* Fondo blanco */
+        color: #6C5CE7; /* Color de texto morado */
+        border: 2px solid #6C5CE7; /* Borde morado para que se vea el contorno */
+        padding: 10px 30px;
+        border-radius: 5px;
+        font-weight: 600;
+        transition: all 0.3s ease; /* Transición suave para efectos hover */
+    }
+
+    /* Efecto hover para el botón (opcional, pero mejora la experiencia) */
+    .puprple_btn:hover {
+        background-color: #6C5CE7; /* Fondo morado al pasar el ratón */
+        color: white; /* Texto blanco al pasar el ratón */
+        border-color: #6C5CE7; /* Mantiene el borde morado */
+    }
+</style>
+             
       </div>
       <!-- container end -->
     </section>
@@ -908,10 +931,8 @@
       <div class="container">
         <div class="section_title" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">
           <!-- h2 -->
-          <h2>What our <span>customer say</span></h2>
+          <h2>Lo que dicen <span> nuestros clientes </span></h2>
           <!-- p -->
-          <p>Lorem Ipsum is simply dummy text of the printing and typese tting <br> indus orem Ipsum has beenthe
-            standard dummy.</p>
         </div>
         <div class="testimonial_block" data-aos="fade-in" data-aos-duration="1500">
           <div id="testimonial_slider" class="owl-carousel owl-theme">
@@ -926,14 +947,13 @@
                   <span><i class="icofont-star"></i></span>
                 </div>
                 <p class="review">
-                  “ Lorem Ipsum is simply dummy text of the printing and typese tting us orem Ipsum has been lorem
-                  beenthe standar dummy. ”
+                  “Con ELEVATE Suite centralizamos los pedidos de materiales en un solo lugar y redujimos los tiempos administrativos en 35% ”
                 </p>
                 <div class="testimonial_img">
-                  <img src="images/testimonial_user1.png" alt="image" >
+                  <img src="images/1.png" alt="image" >
                 </div>
                 <h3>Shayna John</h3>
-                <span class="designation">Careative inc</span>
+                <span class="designation">Directora de Operaciones en Minera Sur</span>
               </div>
             </div>
 
@@ -948,14 +968,13 @@
                   <span><i class="icofont-star"></i></span>
                 </div>
                 <p class="review">
-                  “ Lorem Ipsum is simply dummy text of the printing and typese tting us orem Ipsum has been lorem
-                  beenthe standar dummy. ”
+                  “ Producto fácil de usar y resultados claros. Recomendados 100 ”
                 </p>
                 <div class="testimonial_img">
-                  <img src="images/testimonial_user2.png" alt="image" >
+                  <img src="images/4.png" alt="image" >
                 </div>
-                <h3>Willium Den</h3>
-                <span class="designation">Careative inc</span>
+                <h3>Alexis Shane Den</h3>
+                <span class="designation">CFO en ConstrucLatam</span>
               </div>
             </div>
             
@@ -970,13 +989,12 @@
                   <span><i class="icofont-star"></i></span>
                 </div>
                 <p class="review">
-                  “ Lorem Ipsum is simply dummy text of the printing and typese tting us orem Ipsum has been lorem
-                  beenthe standar dummy. ”
+                   “Implementamos el módulo de gestión de inventarios (INV) en solo 3 días y logramos reducir un 35 % los faltantes de stock. ”
                 </p>
                 <div class="testimonial_img">
-                  <img src="images/testimonial_user3.png" alt="image" >
+                  <img src="images/3.png" alt="image" >
                 </div>
-                <h3>Cyrus Stephen</h3>
+                <h3>Angel Sánchez</h3>
                 <span class="designation">Careative inc</span>
               </div>
 
@@ -991,10 +1009,10 @@
               <span><i class="icofont-star"></i></span>
               <span><i class="icofont-star"></i></span>
               <span><i class="icofont-star"></i></span>
-              <p>5.0 / 5.0</p>
+              
             </div>
-            <h3>2578</h3>
-            <a href="#">TOTAL USER REVIEWS <i class="icofont-arrow-right"></i></a>
+         
+            <a href="#">Únete a millones de profesionales que ya confían en nuestra suite para hacer crecer su negocio. </a>
           </div>
 
           <!-- avtar faces -->
@@ -1013,233 +1031,153 @@
     <!-- Pricing-Section -->
     <section class="row_am pricing_section" id="pricing">
       <!-- container start -->
-      <div class="container">
-        <div class="section_title" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">
-          <!-- h2 -->
-          <h2>Best & simple <span>pricing</span></h2>
-          <!-- p -->
-          <p>Lorem Ipsum is simply dummy text of the printing and typese tting <br> indus orem Ipsum has beenthe
-            standard dummy.</p>
+     <div class="row align-items-center">
+    <div class="col-lg-6 mb-4 mb-lg-0">
+        <div class="about_img" data-aos="fade-in" data-aos-duration="1500">
+            <div class="frame_img"></div>
+            <div class="screen_img">
+              <img class="moving_animation" src="images/eleven.png" alt="Productivity dashboard" class="img-fluid">
+
+<style>
+    /* Estilos para la imagen específica eleven.png */
+    .about_img .screen_img img.moving_animation {
+        max-width: 100%; /* Asegura que la imagen no se desborde del contenedor */
+        height: auto; /* Mantiene la proporción de la imagen */
+        display: block; /* Elimina espacio extra debajo de la imagen */
+        margin: 0 auto; /* Centra la imagen si el contenedor es más grande */
+
+        /* Opcional: Define un ancho máximo específico si quieres controlarlo más */
+        /* max-width: 500px; */ /* Por ejemplo, un máximo de 500px */
+    }
+
+    /* Si quieres que la imagen tenga un ancho fijo y sea responsiva */
+    @media (min-width: 992px) { /* Para pantallas de escritorio */
+        .about_img .screen_img img.moving_animation {
+            width: 90%; /* Por ejemplo, que ocupe el 90% del ancho de su columna */
+        }
+    }
+    @media (max-width: 768px) { /* Para tablets y móviles */
+        .about_img .screen_img img.moving_animation {
+            width: 100%; /* Ocupa el 100% en pantallas más pequeñas */
+        }
+    }
+
+    /* Añade también los estilos que ya teníamos para el contenedor de la imagen si no están aplicados globalmente */
+    .about_img .screen_img {
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        padding: 15px; /* Añade un padding para simular un marco dentro del shadow */
+        background-color: #fff; /* Fondo blanco para el "marco" */
+    }
+
+    /* Animación, si la clase moving_animation implica algún movimiento */
+    /* Ejemplo de animación flotante, si quieres añadirla */
+    @keyframes floatAnimation {
+        0% { transform: translateY(0px); }
+        50% { transform: translateY(-10px); }
+        100% { transform: translateY(0px); }
+    }
+    .moving_animation {
+        animation: floatAnimation 3s ease-in-out infinite;
+    }
+</style>
+            </div>
         </div>
-        <!-- toggle button -->
-        <div class="toggle_block" data-aos="fade-up" data-aos-duration="1500">
-          <span class="month active">Monthly</span>
-          <div class="tog_block">
-            <span class="tog_btn"></span>
-          </div>
-          <span class="years">Yearly</span>
-          <span class="offer">50% off</span>
+    </div>
+    <div class="col-lg-6">
+        <div class="about_text">
+            <div class="section_title" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100">
+                <h2>Nuevas funciones que <span>impulsan tu productividad.</span></h2>
+                <p>
+                    Descubre las últimas herramientas que hemos añadido para que gestiones tus proyectos de manera más eficiente y reduzcas tareas repetitivas.
+                </p>
+                <ul class="list">
+                    <li data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
+                        <i class="icofont-verification-check"></i> Nuestros servicios, reconocidos por miles de usuarios
+                    </li>
+                    <li data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">
+                        <i class="icofont-verification-check"></i> Ideas creativas para tu negocio
+                    </li>
+                    <li data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">
+                        <i class="icofont-verification-check"></i> Alertas inteligentes: anticipa problemas antes de que ocurran.
+                    </li>
+                    <li data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500">
+                        <i class="icofont-verification-check"></i> Automatiza tareas repetitivas: enfócate en crecer, no en papeleo.
+                    </li>
+                </ul>
+            </div>
+            <a href="#contacto" class="btn puprple_btn" data-aos="fade-in" data-aos-duration="1500" data-aos-delay="600">Solicitar una DEMO</a>
         </div>
+    </div>
+</div>
 
-        <!-- pricing box  monthly start -->
-        <div class="pricing_pannel monthly_plan active" data-aos="fade-up" data-aos-duration="1500">
-          <!-- row start -->
-          <div class="row">
-          	<!-- pricing box 1 -->
-            <div class="col-md-4">
-              <div class="pricing_block">
-                <div class="icon">
-                  <img src="images/standard.png" alt="image" >
-                </div>
-                <div class="pkg_name">
-                  <h3>Standard</h3>
-                  <span>For the basics</span>
-                </div>
-                <span class="price">$15</span>
-                <ul class="benifits">
-                  <li>
-                    <p>Up to 5 Website</p>
-                  </li>
-                  <li>
-                    <p>50 GB disk space</p>
-                  </li>
-                  <li>
-                    <p>10 Customize sub pages</p>
-                  </li>
-                  <li>
-                    <p>2 Domains access</p>
-                  </li>
-                  <li>
-                    <p>Support on request</p>
-                  </li>
-                </ul>
-                <a href="#" class="btn white_btn">BUY NOW</a>
-              </div>
-            </div>
+<style>
+    /* Section Styles */
+    .about_text .section_title h2 {
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+        color: #333;
+    }
+    .about_text .section_title h2 span {
+        color: #6C5CE7;
+    }
+    .about_text .section_title p {
+        font-size: 1rem;
+        color: #666;
+        line-height: 1.6;
+        margin-bottom: 2rem;
+    }
 
-            <!-- pricing box 2 -->
-            <div class="col-md-4">
-              <div class="pricing_block highlited_block">
-                <div class="icon">
-                  <img src="images/unlimited.png" alt="image" >
-                </div>
-                <div class="pkg_name">
-                  <h3>Unlimited</h3>
-                  <span>For the professionals</span>
-                </div>
-                <span class="price">$99</span>
-                <ul class="benifits">
-                  <li>
-                    <p>Unlimited Website</p>
-                  </li>
-                  <li>
-                    <p>200 GB disk space</p>
-                  </li>
-                  <li>
-                    <p>20 Customize sub pages</p>
-                  </li>
-                  <li>
-                    <p>10 Domains access</p>
-                  </li>
-                  <li>
-                    <p>24/7 Customer support</p>
-                  </li>
-                </ul>
-                <a href="#" class="btn white_btn">BUY NOW</a>
-              </div>
-            </div>
+    /* List Styles */
+    .about_text .list {
+        list-style: none;
+        padding: 0;
+        margin-bottom: 2rem;
+    }
+    .about_text .list li {
+        font-size: 1rem;
+        color: #555;
+        margin-bottom: 1rem;
+        display: flex;
+        align-items: flex-start;
+    }
+    .about_text .list li i {
+        color: #6C5CE7;
+        margin-right: 10px;
+        font-size: 1.2rem;
+        line-height: 1.4;
+    }
 
-            <!-- pricing box 3 -->
-            <div class="col-md-4">
-              <div class="pricing_block">
-                <div class="icon">
-                  <img src="images/premium.png" alt="image" >
-                </div>
-                <div class="pkg_name">
-                  <h3>Premium</h3>
-                  <span>For small team</span>
-                </div>
-                <span class="price">$55</span>
-                <ul class="benifits">
-                  <li>
-                    <p>Up to 10 Website</p>
-                  </li>
-                  <li>
-                    <p>100 GB disk space</p>
-                  </li>
-                  <li>
-                    <p>15 Customize sub pages</p>
-                  </li>
-                  <li>
-                    <p>4 Domains access</p>
-                  </li>
-                  <li>
-                    <p>24/7 Customer support</p>
-                  </li>
-                </ul>
-                <a href="#" class="btn white_btn">BUY NOW</a>
-              </div>
-            </div>
-          </div>
-          <!-- row end -->
-        </div>
-        <!-- pricing box monthly end -->
-
-        <!-- pricing box yearly start -->
-        <div class="pricing_pannel yearly_plan">
-          <div class="row">
-
-          	<!-- pricing box 1 -->
-            <div class="col-md-4">
-              <div class="pricing_block">
-                <div class="icon">
-                  <img src="images/standard.png" alt="image" >
-                </div>
-                <div class="pkg_name">
-                  <h3>Standard</h3>
-                  <span>For the basics</span>
-                </div>
-                <span class="price">$150</span>
-                <ul class="benifits">
-                  <li>
-                    <p>Up to 10 Website</p>
-                  </li>
-                  <li>
-                    <p>100 GB disk space</p>
-                  </li>
-                  <li>
-                    <p>25 Customize sub pages</p>
-                  </li>
-                  <li>
-                    <p>4 Domains access</p>
-                  </li>
-                  <li>
-                    <p>Support on request</p>
-                  </li>
-                </ul>
-                <a href="#" class="btn white_btn">BUY NOW</a>
-              </div>
-            </div>
-
-            <!-- pricing box 2 -->
-            <div class="col-md-4">
-              <div class="pricing_block highlited_block">
-                <div class="icon">
-                  <img src="images/unlimited.png" alt="image" >
-                </div>
-                <div class="pkg_name">
-                  <h3>Unlimited</h3>
-                  <span>For the professionals</span>
-                </div>
-                <span class="price">$999</span>
-                <ul class="benifits">
-                  <li>
-                    <p>Unlimited Website</p>
-                  </li>
-                  <li>
-                    <p>400 GB disk space</p>
-                  </li>
-                  <li>
-                    <p>40 Customize sub pages</p>
-                  </li>
-                  <li>
-                    <p>20 Domains access</p>
-                  </li>
-                  <li>
-                    <p>24/7 Customer support</p>
-                  </li>
-                </ul>
-                <a href="#" class="btn white_btn">BUY NOW</a>
-              </div>
-            </div>
-
-            <!-- pricing box 3 -->
-            <div class="col-md-4">
-              <div class="pricing_block">
-                <div class="icon">
-                  <img src="images/premium.png" alt="image" >
-                </div>
-                <div class="pkg_name">
-                  <h3>Premium</h3>
-                  <span>For small team</span>
-                </div>
-                <span class="price">$550</span>
-                <ul class="benifits">
-                  <li>
-                    <p>Up to 20 Website</p>
-                  </li>
-                  <li>
-                    <p>200 GB disk space</p>
-                  </li>
-                  <li>
-                    <p>25 Customize sub pages</p>
-                  </li>
-                  <li>
-                    <p>8 Domains access</p>
-                  </li>
-                  <li>
-                    <p>24/7 Customer support</p>
-                  </li>
-                </ul>
-                <a href="#" class="btn white_btn">BUY NOW</a>
-              </div>
-            </div>
-
-          </div>
-        </div>
+    /* Button Styles */
+    .puprple_btn {
+        background-color: #6C5CE7;
+        color: white;
+        border: none;
+        padding: 15px 40px;
+        border-radius: 50px;
+        font-weight: 600;
+        font-size: 1rem;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        transition: all 0.3s ease-in-out;
+        box-shadow: 0 4px 12px rgba(108, 92, 231, 0.3);
+        text-decoration: none;
+        display: inline-block;
+    }
+    .puprple_btn:hover {
+        background-color: #5b46e0;
+        transform: translateY(-2px);
+        box-shadow: 0 6px 15px rgba(108, 92, 231, 0.4);
+    }
+    .about_img .screen_img {
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    }
+</style>
         <!-- pricing box yearly end -->
-
-        <p class="contact_text" data-aos="fade-up" data-aos-duration="1500">Not sure what to choose ? <a href="#">contact us</a> for custom packages</p>
       </div>
       <!-- container start end -->
     </section>
@@ -1249,195 +1187,10 @@
     <section class="row_am faq_section">
       <!-- container start -->
       <div class="container">
-        <div class="section_title" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">
-          <!-- h2 -->
-          <h2><span>FAQ</span> - Frequently Asked Questions</h2>
-          <!-- p -->
-          <p>Lorem Ipsum is simply dummy text of the printing and typese tting <br> indus orem Ipsum has beenthe
-            standard dummy.</p>
-        </div>
-        <!-- faq data -->
-        <div class="faq_panel">
-          <div class="accordion" id="accordionExample">
-            <div class="card" data-aos="fade-up" data-aos-duration="1500">
-              <div class="card-header" id="headingOne">
-                <h2 class="mb-0">
-                  <button type="button" class="btn btn-link active" data-toggle="collapse" data-target="#collapseOne">
-                  	<i class="icon_faq icofont-plus"></i></i> How can i pay ?</button>
-                </h2>
-              </div>
-              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-                <div class="card-body">
-                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry lorem Ipsum has. been the
-                    industrys standard dummy text ever since the when an unknown printer took a galley of type and
-                    scrambled it to make a type specimen book. It has survived not only five cen turies but also the
-                    leap into electronic typesetting, remaining essentially unchanged.</p>
-                </div>
-              </div>
-            </div>
-            <div class="card" data-aos="fade-up" data-aos-duration="1500">
-              <div class="card-header" id="headingTwo">
-                <h2 class="mb-0">
-                  <button type="button" class="btn btn-link collapsed" data-toggle="collapse"
-                    data-target="#collapseTwo"><i class="icon_faq icofont-plus"></i></i> How to setup account ?</button>
-                </h2>
-              </div>
-              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                <div class="card-body">
-                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry lorem Ipsum has. been the
-                    industrys standard dummy text ever since the when an unknown printer took a galley of type and
-                    scrambled it to make a type specimen book. It has survived not only five cen turies but also the
-                    leap into electronic typesetting, remaining essentially unchanged.</p>
-                </div>
-              </div>
-            </div>
-            <div class="card" data-aos="fade-up" data-aos-duration="1500">
-              <div class="card-header" id="headingThree">
-                <h2 class="mb-0">
-                  <button type="button" class="btn btn-link collapsed" data-toggle="collapse"
-                    data-target="#collapseThree"><i class="icon_faq icofont-plus"></i></i>What is process to get refund
-                    ?</button>
-                </h2>
-              </div>
-              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-                <div class="card-body">
-                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry lorem Ipsum has. been the
-                    industrys standard dummy text ever since the when an unknown printer took a galley of type and
-                    scrambled it to make a type specimen book. It has survived not only five cen turies but also the
-                    leap into electronic typesetting, remaining essentially unchanged.</p>
-                </div>
-              </div>
-            </div>
-            <div class="card" data-aos="fade-up" data-aos-duration="1500">
-              <div class="card-header" id="headingFour">
-                <h2 class="mb-0">
-                  <button type="button" class="btn btn-link collapsed" data-toggle="collapse"
-                    data-target="#collapseFour"><i class="icon_faq icofont-plus"></i></i>What is process to get refund
-                    ?</button>
-                </h2>
-              </div>
-              <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
-                <div class="card-body">
-                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry lorem Ipsum has. been the
-                    industrys standard dummy text ever since the when an unknown printer took a galley of type and
-                    scrambled it to make a type specimen book. It has survived not only five cen turies but also the
-                    leap into electronic typesetting, remaining essentially unchanged.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- container end -->
-    </section>
-    <!-- FAQ-Section end -->
-
-    <!-- Beautifull-interface-Section start -->
-    <section class="row_am interface_section">
-	  <!-- container start -->
-      <div class="container-fluid">
-        <div class="section_title" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">
-            <!-- h2 -->
-            <h2>Todos tus procesos,  <span> en un mismo ecosistema</span></h2>
-            <!-- p -->
-            <p>
-              Gestiona, controla y haz crecer tu empresa desde una única plataforma modular. Descubre cómo cada solución de ELEVATE impulsa la productividad, la seguridad y la eficiencia de tu negocio.
-            </p>
-        </div>
-
-          <!-- screen slider start -->
-          <div class="screen_slider" >
-            <div id="screen_slider" class="owl-carousel owl-theme">
-              <div class="item">
-                <div class="screen_frame_img">
-                    <img src="images/screen-1.png" alt="image" >
-                </div>
-              </div>
-              <div class="item">
-                <div class="screen_frame_img">
-                    <img src="images/screen-2.png" alt="image" >
-                </div>
-              </div>
-              <div class="item">
-                <div class="screen_frame_img">
-                    <img src="images/screen-3.png" alt="image" >
-                </div>
-              </div>
-              <div class="item">
-                <div class="screen_frame_img">
-                    <img src="images/screen-4.png" alt="image" >
-                </div>
-              </div>
-              <div class="item">
-                <div class="screen_frame_img">
-                    <img src="images/screen-5.png" alt="image" >
-                </div>
-              </div>
-              <div class="item">
-                <div class="screen_frame_img">
-                    <img src="images/screen-3.png" alt="image" >
-                </div>
-              </div>
-          </div>
-          </div>
-          <!-- screen slider end -->
-      </div>
-      <!-- container end -->
-    </section>
-    <!-- Beautifull-interface-Section end -->
-
-    <!-- Download-Free-App-section-Start  -->
-    <section class="row_am free_app_section" id="getstarted">
-    	<!-- container start -->
-        <div class="container">
-            <div class="free_app_inner" data-aos="fade-in" data-aos-duration="1500" data-aos-delay="100"> 
-              	<!-- row start -->
-                <div class="row">
-                	<!-- content -->
-                    <div class="col-md-6">
-                        <div class="free_text">
-                            <div class="section_title">
-                                <h2>Let’s download free from apple and play store</h2>
-                                <p>Instant free download from apple and play store orem Ipsum is simply dummy text of the printing.
-                                  and typese tting indus orem Ipsum has beenthe standard</p>
-                            </div>
-                            <ul class="app_btn">
-                              <li>
-                                <a href="#">
-                                  <img src="images/appstore_blue.png" alt="image" >
-                                </a>
-                              </li>
-                              <li>
-                                <a href="#">
-                                  <img src="images/googleplay_blue.png" alt="image" >
-                                </a>
-                              </li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <!-- images -->
-                    <div class="col-md-6">
-                        <div class="free_img">
-                            <img src="images/download-screen01.png" alt="image" >
-                            <img class="mobile_mockup" src="images/download-screen02.png" alt="image" >
-                        </div>
-                    </div>
-                </div>
-                <!-- row end -->
-            </div>
-        </div>
-        <!-- container end -->
-    </section>
-    <!-- Download-Free-App-section-end  -->
-
-    <!-- Story-Section-Start -->
-    <section class="row_am latest_story" id="blog">
-     <!-- container start -->
-      <div class="container">
           <div class="section_title" data-aos="fade-in" data-aos-duration="1500" data-aos-delay="100">
-              <h2>Read latest <span>story</span></h2>
-              <p>Lorem Ipsum is simply dummy text of the printing and typese tting <br> indus orem Ipsum has beenthe standard dummy.</p>
+              <h2>Transformación <span>Digital</span></h2>
+              <p>Muchas empresas se estancan no por falta de oportunidades, sino por procesos internos lentos y desordenados.
+Aquí te contamos los errores más comunes y cómo solucionarlos con herramientas digitales.</p>
           </div>
           <!-- row start -->
           <div class="row">
@@ -1445,14 +1198,13 @@
             <div class="col-md-4">
                 <div class="story_box" data-aos="fade-up" data-aos-duration="1500">
                     <div class="story_img">
-                      <img src="images/story01.png" alt="image" >
-                      <span>45 min ago</span>
+                      <img src="images/RP.jpg" alt="image" >
+
                     </div>
                     <div class="story_text">
-                        <h3>Cool features added!</h3>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting 
-                          industry lorem Ipsum has.</p>
-                        <a href="#">READ MORE</a>
+                        <h3>Reportes manuales y dispersos</h3>
+                        <p>Cada área de la empresa maneja su propia planilla, sistema o archivo. Los reportes tardan días en consolidarse y siempre hay riesgo de errores humanos.</p>
+                        <a href="#">Ver más</a>
                     </div>
                 </div>
             </div>
@@ -1461,13 +1213,12 @@
             <div class="col-md-4">
                 <div class="story_box" data-aos="fade-up" data-aos-duration="1500">
                     <div class="story_img">
-                      <img src="images/story02.png" alt="image" >
-                      <span>45 min ago</span>
+                      <img src="images/DP.jpg" alt="image" >
                     </div>
                     <div class="story_text">
-                          <h3>Top rated app! Yupp.</h3>
-                        <p>Simply dummy text of the printing and typesetting industry lorem Ipsum has Lorem Ipsum is.</p>
-                        <a href="#">READ MORE</a>
+                          <h3>Demasiadas plataformas para tareas distintas</h3>
+                        <p>La empresa usa una plataforma para recursos humanos, otra para ventas, otra para proyectos y otra para finanzas. Esto genera confusión, costos altos y procesos inconexos.</p>
+                        <a href="#">Ver más</a>
                     </div>
                 </div>
             </div>
@@ -1476,17 +1227,251 @@
             <div class="col-md-4">
                 <div class="story_box" data-aos="fade-up" data-aos-duration="1500">
                     <div class="story_img">
-                      <img src="images/story03.png" alt="image" >
-                      <span>45 min ago</span>
+                      <img src="images/RC.jpg" alt="image" >
                     </div>
                     <div class="story_text">
-                          <h3>Creative ideas on app.</h3>
-                        <p>Printing and typesetting industry lorem Ipsum has Lorem simply dummy text of the.</p>
-                        <a href="#">READ MORE</a>
+                          <h3>Resistencia al cambio tecnológico</h3>
+                        <p>Muchas empresas saben que necesitan modernizarse, pero los equipos sienten miedo: “es complicado”, “nos va a quitar tiempo”, “siempre lo hicimos así”. Esa resistencia frena la evolución.</p>
+                        <a href="#">Ver más</a>
                     </div>
                 </div>
             </div>
           </div>
+          <!-- row end -->
+      </div>
+    <!-- FAQ-Section end -->
+         </section>
+    <!-- Beautifull-interface-Section start -->
+    <div class="container py-5">
+    <div class="section_title text-center" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">
+        <h2><span>¿Dudas?</span> - Te las resolvemos aquí.</h2>
+    </div>
+    <div class="faq_panel mx-auto" style="max-width: 800px;">
+        <div class="accordion" id="accordionExample">
+            <div class="card my-3 border-0 rounded-lg shadow-sm" data-aos="fade-up" data-aos-duration="1500">
+                <div class="card-header bg-white border-0" id="headingOne">
+                    <h2 class="mb-0">
+                        <button type="button" class="btn btn-link w-100 text-left py-4" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            <i class="icon_faq icofont-plus mr-3"></i>
+                            ¿En qué sectores se puede implementar SUITE ELEVATE?
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                    <div class="card-body">
+                        <p>SUITE ELEVATE está diseñada para empresas de los sectores industrial, construcción, educación y minería, aunque también puede adaptarse a otras industrias que requieran optimizar procesos internos.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card my-3 border-0 rounded-lg shadow-sm" data-aos="fade-up" data-aos-duration="1500">
+                <div class="card-header bg-white border-0" id="headingTwo">
+                    <h2 class="mb-0">
+                        <button type="button" class="btn btn-link w-100 text-left py-4 collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <i class="icon_faq icofont-plus mr-3"></i>
+                            ¿Qué tipo de empresas pueden usar SUITE ELEVATE?
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                    <div class="card-body">
+                        <p>Está pensada para medianas empresas, grandes empresas y organizaciones en crecimiento que buscan profesionalizar, centralizar y eficientizar su gestión.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card my-3 border-0 rounded-lg shadow-sm" data-aos="fade-up" data-aos-duration="1500">
+                <div class="card-header bg-white border-0" id="headingThree">
+                    <h2 class="mb-0">
+                        <button type="button" class="btn btn-link w-100 text-left py-4 collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            <i class="icon_faq icofont-plus mr-3"></i>
+                            ¿Puedo elegir sólo algunos módulos o debo implementarlos todos?
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                    <div class="card-body">
+                        <p>Su arquitectura es completamente modular: puedes empezar con los módulos que necesites hoy e incorporar otros a medida que tu empresa crece o tus procesos lo requieran.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card my-3 border-0 rounded-lg shadow-sm" data-aos="fade-up" data-aos-duration="1500">
+                <div class="card-header bg-white border-0" id="headingFour">
+                    <h2 class="mb-0">
+                        <button type="button" class="btn btn-link w-100 text-left py-4 collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            <i class="icon_faq icofont-plus mr-3"></i>
+                            ¿Cómo puedo obtener más información o empezar a utilizar SUITE ELEVATE?
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                    <div class="card-body">
+                        <p>Completa el formulario de contacto en nuestra web, agenda una llamada con un experto, o escríbenos directamente a elevatensuite@gmail.com. ¡Estamos listos para ayudarte en tu transformación digital!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    /* Estilos globales para la tipografía */
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+    body {
+        font-family: 'Poppins', sans-serif;
+    }
+
+    /* Estilos del título de la sección */
+    .section_title h2 {
+        font-size: 2.8rem;
+        font-weight: 600;
+        margin-bottom: 40px;
+    }
+    .section_title h2 span {
+        color: #6C5CE7;
+    }
+
+    /* Estilos del contenedor del acordeón */
+    .faq_panel .card {
+        border-radius: 12px !important;
+        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    }
+
+    .faq_panel .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08) !important;
+    }
+
+    /* Estilos de los botones del acordeón */
+    .faq_panel .card-header .btn-link {
+        color: #444;
+        font-weight: 600;
+        font-size: 1.1rem;
+        text-decoration: none;
+        position: relative;
+        padding-left: 0;
+        transition: color 0.3s ease;
+    }
+    .faq_panel .card-header .btn-link:hover,
+    .faq_panel .card-header .btn-link.active {
+        color: #6C5CE7;
+    }
+
+    /* Estilos del ícono de la pregunta */
+    .faq_panel .card-header .icon_faq {
+        color: #6C5CE7;
+        font-size: 1.2rem;
+        transition: transform 0.3s ease;
+    }
+
+    .faq_panel .card-header .btn-link:not(.collapsed) .icon_faq {
+        transform: rotate(45deg); /* Gira el ícono cuando el acordeón está activo */
+    }
+
+    /* Estilos del cuerpo del acordeón */
+    .faq_panel .card-body p {
+        font-size: 1rem;
+        color: #777;
+        line-height: 1.6;
+        padding-left: 2rem; /* Alinea el texto con el ícono y el título */
+    }
+
+    /* Estilos para el efecto de sombra y bordes */
+    .shadow-sm {
+        box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
+    }
+
+    /* Ajuste en el espaciado para Bootstrap 4 */
+    .py-5 {
+        padding-top: 3rem!important;
+        padding-bottom: 3rem!important;
+    }
+</style>
+      <!-- container end -->
+    </section>
+    </div>
+    <!-- Beautifull-interface-Section end -->
+
+    <!-- Download-Free-App-section-Start  -->
+  
+                             
+    <!-- Download-Free-App-section-end  -->
+
+    <!-- Story-Section-Start -->
+    <section class="row_am latest_story" id="blog">
+     <!-- container start -->
+       <section id="contacto" class="row_am comment_form_section">
+      <div class="container">
+        <div class="section_title">
+          <h2>¿Preparado para hacer  evolucionar <span> tu empresa?</span></h2>
+          <p>Nuestros expertos te mostrarán cómo adaptar ELEVATE a los retos y objetivos de tu empresa.
+</p>
+        </div>
+        <form action="">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Nombres y apellidos">
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <input type="email" class="form-control" placeholder="Correo electrónico">
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Teléfono">
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Cargo  ">
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="form-group">
+                <textarea class="form-control" placeholder="Comentario"></textarea>
+              </div>
+            </div>
+           <div class="col-md-12 text-center">
+    <button class="btn puprple_btn" type="submit">Solicita UNA DEMO</button>
+</div>
+
+<style>
+    /* Estilos para el botón puprple_btn */
+    .puprple_btn {
+        background-color: #6C5CE7;
+        color: white;
+        border: none; /* Quitamos el borde para un aspecto más limpio */
+        padding: 15px 40px; /* Aumentamos el padding para hacerlo más grande y visible */
+        border-radius: 50px; /* Bordes muy redondeados para un diseño moderno */
+        font-weight: 600;
+        font-size: 1rem;
+        letter-spacing: 0.5px; /* Espaciado entre letras para mejor legibilidad */
+        text-transform: uppercase; /* Opcional: convierte el texto a mayúsculas */
+        transition: all 0.3s ease-in-out; /* Transición suave para todos los cambios */
+        box-shadow: 0 4px 12px rgba(108, 92, 231, 0.3); /* Sombra sutil para darle profundidad */
+        cursor: pointer;
+    }
+
+    /* Efecto hover */
+    .puprple_btn:hover {
+        background-color: #5b46e0; /* Color un poco más oscuro al pasar el ratón */
+        transform: translateY(-2px); /* Un ligero efecto de elevación */
+        box-shadow: 0 6px 15px rgba(108, 92, 231, 0.4); /* Sombra más pronunciada al pasar el ratón */
+    }
+
+    /* Efecto activo (cuando se presiona) */
+    .puprple_btn:active {
+        transform: translateY(0); /* Vuelve a su posición original */
+        box-shadow: 0 2px 8px rgba(108, 92, 231, 0.2); /* Sombra más pequeña */
+    }
+</style>
+          </div>
+        </form>
+      </div>
+    </section>
+      <!-- container end -->
+    </section>
           <!-- row end -->
       </div>
       <!-- container end -->
@@ -1528,16 +1513,15 @@
               	  <!-- footer link 1 -->
                   <div class="col-lg-4 col-md-6 col-12">
                       <div class="abt_side">
-                        <div class="logo"> <img src="images/footer_logo.png" alt="image" ></div>
+                        <div class="logo"> <img src="images/BANNER (2).svg" alt="image" ></div>
                         <ul>
-                          <li><a href="#">support@example.com</a></li>
+                          <li><a href="#">Elevatesuite@gmail.com</a></li>
                           <li><a href="#">+1-900-123 4567</a></li>
                         </ul>
                         <ul class="social_media">
                             <li><a href="#"><i class="icofont-facebook"></i></a></li>
                             <li><a href="#"><i class="icofont-twitter"></i></a></li>
                             <li><a href="#"><i class="icofont-instagram"></i></a></li>
-                            <li><a href="#"><i class="icofont-pinterest"></i></a></li>
                         </ul>
                       </div>
                   </div>
@@ -1545,13 +1529,13 @@
                   <!-- footer link 2 -->
                   <div class="col-lg-3 col-md-6 col-12">
                       <div class="links">
-                        <h3>Useful Links</h3>
+                     
                           <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">About us</a></li>
-                            <li><a href="#">Services</a></li>
-                            <li><a href="#">Blog</a></li>
-                            <li><a href="#">Contact us</a></li>
+                            <li><a href="#">Inicio</a></li>
+                            <li><a href="#">Beneficios</a></li>
+                            <li><a href="#">Productos</a></li>
+                            <li><a href="#">Casos de uso</a></li>
+                            <li><a href="#">Testimonios</a></li>
                           </ul>
                       </div>
                   </div>
@@ -1559,13 +1543,12 @@
                   <!-- footer link 3 -->
                   <div class="col-lg-3 col-md-6 col-12">
                     <div class="links">
-                      <h3>Help & Suport</h3>
+                
                         <ul>
-                          <li><a href="#">FAQs</a></li>
-                          <li><a href="#">Support</a></li>
-                          <li><a href="#">How it works</a></li>
-                          <li><a href="#">Terms & conditions</a></li>
-                          <li><a href="#">Privacy policy</a></li>
+                          <li><a href="#">Consultas</a></li>
+                          <li><a href="#">COntacto</a></li>
+                          <li><a href="#">Terminos y condiciones</a></li>
+                          <li><a href="#">Políticas de privacidad</a></li>
                         </ul>
                     </div>
                   </div>
@@ -1573,7 +1556,6 @@
                   <!-- footer link 4 -->
                   <div class="col-lg-2 col-md-6 col-12">
                     <div class="try_out">
-                        <h3>Let’s Try Out</h3>
                         <ul class="app_btn">
                           <li>
                             <a href="#">
@@ -1604,7 +1586,6 @@
                     <p>© Copyrights 2022. All rights reserved.</p>
                 </div>
                 <div class="col-md-6">
-                    <p class="developer_text">Design & developed by <a href="https://themeforest.net/user/kalanidhithemes" target="blank">Kalanidhi Themes</a></p>
                 </div>
             </div>
             <!-- row end -->
