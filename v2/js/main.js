@@ -100,6 +100,69 @@ $('#screen_slider').owlCarousel({
     }
 })
 
+$('#beneficios_slider').owlCarousel({
+    loop:true,
+    margin:24,
+    nav:false,
+    dots:true,
+    autoplay:true,
+    smartSpeed:1800,
+    center:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        768:{
+            items:3
+        },
+        1000:{
+            items:3
+        }
+    }
+})
+
+$('#pasos_slider').owlCarousel({
+    loop:true,
+    margin:24,
+    nav:false,
+    dots:true,
+    autoplay:true,
+    smartSpeed:1800,
+    center:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        768:{
+            items:3
+        },
+        1000:{
+            items:3
+        }
+    }
+})
+
+$('#transformacion_slider').owlCarousel({
+    loop:true,
+    margin:24,
+    nav:false,
+    dots:true,
+    autoplay:true,
+    smartSpeed:1800,
+    center:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        768:{
+            items:3
+        },
+        1000:{
+            items:3
+        }
+    }
+})
+
 
 // Number Count
 window.addEventListener('scroll', function() {
