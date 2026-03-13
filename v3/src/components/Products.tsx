@@ -110,7 +110,7 @@ export function Products() {
                 {product.desc}
               </p>
               <a href="#contacto" className="mt-auto inline-flex items-center text-sm font-medium text-indigo-100 hover:text-white transition-colors group/link">
-                Ver mas <span className="ml-1 group-hover/link:translate-x-1 transition-transform">-></span>
+                Ver mas <span className="ml-1 group-hover/link:translate-x-1 transition-transform">-</span>
               </a>
             </motion.article>
           ))}
