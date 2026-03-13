@@ -51,8 +51,6 @@ export function Footer() {
             <ul className="space-y-4">
               <li><a href="#" className="text-gray-400 hover:text-indigo-400 transition-colors text-sm">Sobre Nosotros</a></li>
               <li><a href="#" className="text-gray-400 hover:text-indigo-400 transition-colors text-sm">Casos de Éxito</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-indigo-400 transition-colors text-sm">Blog</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-indigo-400 transition-colors text-sm">Carreras</a></li>
               <li><a href="#" className="text-gray-400 hover:text-indigo-400 transition-colors text-sm">Contacto</a></li>
             </ul>
           </div>
