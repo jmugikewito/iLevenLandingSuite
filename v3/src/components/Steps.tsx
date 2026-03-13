@@ -57,7 +57,7 @@ export function Steps() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.2 }}
-              className="relative z-10 flex flex-col items-center text-center"
+              className="relative z-10 flex flex-col items-center text-center elevate-panel px-6 py-8"
             >
               <div className="w-24 h-24 rounded-full bg-[#111] border-2 border-indigo-500/30 flex items-center justify-center mb-8 shadow-[0_0_30px_rgba(79,70,229,0.2)]">
                 <span className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-500">

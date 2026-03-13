@@ -14,9 +14,9 @@ export function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 text-sm text-indigo-300 font-medium mb-8"
+            className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 text-ms text-indigo-300 font-medium mb-8"
           >
-            <span className="flex h-2 w-2 rounded-full bg-indigo-500 animate-pulse"></span>
+            <span className="flex h-3 w-2 rounded-full bg-indigo-500 animate-pulse"></span>
             La suite empresarial modular que evoluciona contigo
           </motion.div>
 

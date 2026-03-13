@@ -3,3 +3,59 @@
 html {
   scroll-behavior: smooth;
 }
+
+/* Unified panel style for cards across the landing */
+.elevate-panel {
+  position: relative;
+  border-radius: 1rem;
+  border: 1px solid rgba(99, 102, 241, 0.28);
+  background:
+    linear-gradient(165deg, rgba(19, 23, 45, 0.92) 0%, rgba(11, 13, 24, 0.92) 100%);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.06),
+    0 12px 30px rgba(3, 6, 18, 0.45),
+    0 0 0 1px rgba(79, 70, 229, 0.12);
+  backdrop-filter: blur(8px);
+  transition: transform 220ms ease, border-color 220ms ease, box-shadow 220ms ease, background-color 220ms ease;
+}
+
+.elevate-panel::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  background: linear-gradient(180deg, rgba(99, 102, 241, 0.16) 0%, rgba(99, 102, 241, 0) 38%);
+  opacity: 0.9;
+}
+
+.elevate-panel:hover {
+  transform: translateY(-4px);
+  border-color: rgba(99, 102, 241, 0.55);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.08),
+    0 18px 34px rgba(3, 6, 18, 0.5),
+    0 0 0 1px rgba(99, 102, 241, 0.28),
+    0 0 32px rgba(79, 70, 229, 0.18);
+}
+
+/* Primary panel style inspired by #304FFE */
+.primary-surface {
+  position: relative;
+  border-radius: 1rem;
+  border: 1px solid rgba(48, 79, 254, 0.75);
+  background: radial-gradient(circle at top left, rgba(48, 79, 254, 0.42), rgba(6, 10, 30, 0.94) 62%);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.06),
+    0 10px 28px rgba(7, 10, 34, 0.5);
+  transition: transform 220ms ease, border-color 220ms ease, box-shadow 220ms ease;
+}
+
+.primary-surface:hover {
+  transform: translateY(-4px);
+  border-color: rgba(110, 124, 255, 0.95);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.1),
+    0 16px 32px rgba(7, 10, 34, 0.55),
+    0 0 26px rgba(48, 79, 254, 0.28);
+}

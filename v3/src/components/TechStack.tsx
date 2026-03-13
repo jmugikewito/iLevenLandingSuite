@@ -131,7 +131,7 @@ export function TechStack() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.4, delay: index * 0.05 }}
-              className="min-w-[280px] md:min-w-[320px] snap-start rounded-2xl border border-white/10 bg-[#111] p-6 hover:bg-[#151515] hover:border-white/20 transition-all"
+              className="min-w-[280px] md:min-w-[320px] snap-start elevate-panel p-6"
             >
               <div className="w-14 h-14 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center mb-5">
                 <img src={item.iconUrl} alt={item.name} className="w-8 h-8 object-contain" loading="lazy" />

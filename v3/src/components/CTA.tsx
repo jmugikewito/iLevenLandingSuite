@@ -23,7 +23,7 @@ export function CTA() {
             evolucionar tu empresa?
           </span>
         </motion.h2>
-        
+
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -59,22 +59,24 @@ export function CTA() {
         >
           <a
             href="#"
-            className="rounded-2xl bg-white px-6 py-4 flex items-center justify-center gap-3 hover:bg-gray-100 transition-colors"
+            className="rounded-2xl px-6 py-4 flex items-center justify-center gap-3 transition-all border border-[#304FFE]/80 bg-[radial-gradient(circle_at_top_left,_rgba(48,79,254,0.42),_rgba(6,10,30,0.94)_62%)] hover:border-[#6E7CFF] hover:shadow-[0_0_26px_rgba(48,79,254,0.30)]"
             aria-label="Disponible en App Store"
           >
-            <img src={appStoreBadge} alt="Disponible en App Store" className="h-12 w-auto object-contain" />
-            <span className="text-indigo-600 font-semibold text-sm md:text-base">
-              Available on the App Store
+            <img src={appStoreBadge} alt="Disponible en App Store" className="h-20 w-auto object-contain" />
+            <span className="text-white text-left leading-tight">
+              <span className="block text-[11px] md:text-xs font-medium tracking-wide text-white/85">Available on the</span>
+              <span className="block text-sm md:text-base font-bold uppercase">APP STORE</span>
             </span>
           </a>
           <a
             href="#"
-            className="rounded-2xl bg-white px-6 py-4 flex items-center justify-center gap-3 hover:bg-gray-100 transition-colors"
+            className="rounded-2xl px-6 py-4 flex items-center justify-center gap-3 transition-all border border-[#304FFE]/80 bg-[radial-gradient(circle_at_top_left,_rgba(48,79,254,0.42),_rgba(6,10,30,0.94)_62%)] hover:border-[#6E7CFF] hover:shadow-[0_0_26px_rgba(48,79,254,0.30)]"
             aria-label="Disponible en Google Play"
           >
-            <img src={playStoreBadge} alt="Disponible en Google Play" className="h-12 w-auto object-contain" />
-            <span className="text-indigo-600 font-semibold text-sm md:text-base">
-              Android app on Google Play
+            <img src={playStoreBadge} alt="Disponible en Google Play" className="h-20 w-auto object-contain" />
+            <span className="text-white text-left leading-tight">
+              <span className="block text-[11px] md:text-xs font-medium tracking-wide text-white/85">Available on the</span>
+              <span className="block text-sm md:text-base font-bold uppercase">GOOGLE PLAY</span>
             </span>
           </a>
         </motion.div>

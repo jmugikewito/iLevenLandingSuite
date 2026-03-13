@@ -55,7 +55,7 @@ export function Testimonials() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="relative rounded-2xl border border-white/10 bg-[#111] p-8 flex flex-col h-full"
+              className="relative elevate-panel p-8 flex flex-col h-full"
             >
               <Quote className="w-10 h-10 text-indigo-500/20 absolute top-6 right-6" />
               <div className="flex items-center gap-4 mb-6">

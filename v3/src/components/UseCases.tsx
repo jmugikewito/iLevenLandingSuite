@@ -67,13 +67,13 @@ export function UseCases() {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             {cases.map((item, index) => (
               <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="rounded-2xl border border-white/10 bg-[#111] p-6 hover:bg-[#151515] transition-colors"
-              >
+              key={index}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: index * 0.1 }}
+              className="elevate-panel p-6"
+            >
                 <div className={`w-16 h-16 rounded-xl ${item.bg} flex items-center justify-center mb-6`}>
                   {item.icon}
                 </div>

@@ -55,9 +55,9 @@ export function Benefits() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="relative group rounded-2xl border border-white/10 bg-[#111] p-8 hover:bg-[#151515] transition-colors"
+              className="relative group elevate-panel p-8"
             >
-              <div className={`absolute inset-0 bg-gradient-to-br ${benefit.color} opacity-0 group-hover:opacity-100 transition-opacity rounded-2xl pointer-events-none`}></div>
+              <div className={`absolute inset-0 bg-gradient-to-br ${benefit.color} opacity-65 group-hover:opacity-90 transition-opacity rounded-2xl pointer-events-none`}></div>
               <div className="relative z-10">
                 <div className="w-16 h-16 rounded-xl bg-white/5 flex items-center justify-center mb-6 border border-white/10 group-hover:scale-110 transition-transform">
                   {benefit.icon}
