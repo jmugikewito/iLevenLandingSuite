@@ -56,11 +56,11 @@ export function Hero() {
               <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
             </a>
             <a
-              href="#demo"
+              href="#casos_de_uso"
               className="w-full sm:w-auto px-8 py-4 rounded-full bg-white/5 border border-white/10 text-white font-semibold flex items-center justify-center gap-2 hover:bg-white/10 transition-all"
             >
               <PlayCircle size={20} className="text-indigo-400" />
-              Ver video demo
+              Ver casos de uso
             </a>
           </motion.div>
         </div>

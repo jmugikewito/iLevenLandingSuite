@@ -1,10 +1,52 @@
 import { motion } from 'motion/react';
 import { ArrowRight } from 'lucide-react';
+import { useMemo, useState, type ChangeEvent, type FormEvent } from 'react';
 import appStoreBadge from '../images/appstore.svg';
 import ilevenBanner from '../images/ileven_grid.svg';
 import playStoreBadge from '../images/playstore.svg';
+import { buildWhatsAppUrl, siteConfig } from '../config/site';
 
 export function CTA() {
+  const [formData, setFormData] = useState({
+    name: '',
+    company: '',
+    role: '',
+    email: '',
+    phone: '',
+    challenge: '',
+  });
+
+  const [error, setError] = useState<string | null>(null);
+
+  const whatsappUrl = useMemo(() => {
+    const lines = [
+      'Hola equipo ELEVATE, quiero una demo.',
+      `Nombre: ${formData.name || '-'}`,
+      `Empresa: ${formData.company || '-'}`,
+      `Cargo: ${formData.role || '-'}`,
+      `Email: ${formData.email || '-'}`,
+      `Telefono: ${formData.phone || '-'}`,
+      `Reto principal: ${formData.challenge || '-'}`,
+    ];
+    return buildWhatsAppUrl(lines.join('\n'));
+  }, [formData]);
+
+  const onSubmit = (event: FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    if (!formData.name || !formData.company || !formData.email || !formData.challenge) {
+      setError('Completa nombre, empresa, email y reto principal para continuar.');
+      return;
+    }
+    setError(null);
+    window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
+  };
+
+  const onChange =
+    (key: keyof typeof formData) =>
+    (event: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+      setFormData((prev) => ({ ...prev, [key]: event.target.value }));
+    };
+
   return (
     <section id="contacto" className="py-32 bg-[#0a0a0a] relative overflow-hidden border-t border-white/5">
       {/* Background Effects */}
@@ -43,13 +85,66 @@ export function CTA() {
           className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-10"
         >
           <a
-            href="#contacto"
+            href="#contacto-form"
             className="w-full sm:w-auto px-10 py-5 rounded-full bg-gradient-to-r from-blue-600 to-indigo-600 text-white text-lg font-semibold flex items-center justify-center gap-2 hover:from-blue-500 hover:to-indigo-500 transition-all shadow-[0_0_40px_rgba(79,70,229,0.4)] hover:shadow-[0_0_60px_rgba(79,70,229,0.6)] group"
           >
-            Solicita una demo gratuita
+            Agendar demo ahora
             <ArrowRight size={24} className="group-hover:translate-x-1 transition-transform" />
           </a>
         </motion.div>
+
+        <motion.form
+          id="contacto-form"
+          onSubmit={onSubmit}
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5, delay: 0.24 }}
+          className="mx-auto mb-12 max-w-4xl rounded-3xl border border-white/10 bg-white/[0.03] p-6 md:p-8 text-left"
+        >
+          <p className="mb-6 text-sm uppercase tracking-[0.2em] text-indigo-200/80">Solicitud de demo</p>
+          <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
+            <label className="block">
+              <span className="mb-2 block text-sm text-gray-300">Nombre completo*</span>
+              <input value={formData.name} onChange={onChange('name')} className="w-full rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-white outline-none transition focus:border-indigo-400" />
+            </label>
+            <label className="block">
+              <span className="mb-2 block text-sm text-gray-300">Empresa*</span>
+              <input value={formData.company} onChange={onChange('company')} className="w-full rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-white outline-none transition focus:border-indigo-400" />
+            </label>
+            <label className="block">
+              <span className="mb-2 block text-sm text-gray-300">Cargo</span>
+              <input value={formData.role} onChange={onChange('role')} className="w-full rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-white outline-none transition focus:border-indigo-400" />
+            </label>
+            <label className="block">
+              <span className="mb-2 block text-sm text-gray-300">Correo corporativo*</span>
+              <input type="email" value={formData.email} onChange={onChange('email')} className="w-full rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-white outline-none transition focus:border-indigo-400" />
+            </label>
+            <label className="block md:col-span-2">
+              <span className="mb-2 block text-sm text-gray-300">Telefono</span>
+              <input value={formData.phone} onChange={onChange('phone')} className="w-full rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-white outline-none transition focus:border-indigo-400" />
+            </label>
+            <label className="block md:col-span-2">
+              <span className="mb-2 block text-sm text-gray-300">Cual es tu principal reto operativo hoy?*</span>
+              <textarea rows={4} value={formData.challenge} onChange={onChange('challenge')} className="w-full rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-white outline-none transition focus:border-indigo-400" />
+            </label>
+          </div>
+
+          {error ? <p className="mt-4 text-sm text-red-300">{error}</p> : null}
+
+          <div className="mt-6 flex flex-col gap-3 sm:flex-row">
+            <button type="submit" className="rounded-full bg-gradient-to-r from-blue-600 to-indigo-600 px-6 py-3 font-semibold text-white transition hover:from-blue-500 hover:to-indigo-500">
+              Enviar por WhatsApp
+            </button>
+            <a
+              href={`mailto:${siteConfig.contact.email}?subject=${encodeURIComponent('Solicitud de demo ELEVATE')}`}
+              className="rounded-full border border-white/20 px-6 py-3 text-center font-medium text-white/90 transition hover:bg-white/5"
+            >
+              Enviar por email
+            </a>
+          </div>
+          <p className="mt-3 text-xs text-gray-500">Al enviar, autorizas ser contactado por el equipo comercial de ELEVATE.</p>
+        </motion.form>
 
         <motion.p
           initial={{ opacity: 0, y: 20 }}
@@ -69,7 +164,9 @@ export function CTA() {
           className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-2xl mx-auto"
         >
           <a
-            href="#"
+            href={buildWhatsAppUrl('Hola, quiero recibir acceso a la app iOS de ELEVATE.')}
+            target="_blank"
+            rel="noopener noreferrer"
             className="group rounded-2xl px-6 py-4 flex items-center justify-center gap-3 transition-all border border-[#304FFE]/80 bg-[radial-gradient(circle_at_top_left,_rgba(48,79,254,0.42),_rgba(6,10,30,0.94)_62%)] hover:border-[#6E7CFF] hover:shadow-[0_0_26px_rgba(48,79,254,0.30)] focus-visible:border-[#8EA0FF] focus-visible:shadow-[0_0_32px_rgba(48,79,254,0.42)] outline-none"
             aria-label="Disponible en App Store"
           >
@@ -84,7 +181,9 @@ export function CTA() {
             </span>
           </a>
           <a
-            href="#"
+            href={buildWhatsAppUrl('Hola, quiero recibir acceso a la app Android de ELEVATE.')}
+            target="_blank"
+            rel="noopener noreferrer"
             className="group rounded-2xl px-6 py-4 flex items-center justify-center gap-3 transition-all border border-[#304FFE]/80 bg-[radial-gradient(circle_at_top_left,_rgba(48,79,254,0.42),_rgba(6,10,30,0.94)_62%)] hover:border-[#6E7CFF] hover:shadow-[0_0_26px_rgba(48,79,254,0.30)] focus-visible:border-[#8EA0FF] focus-visible:shadow-[0_0_32px_rgba(48,79,254,0.42)] outline-none"
             aria-label="Disponible en Google Play"
           >
