@@ -1,40 +1,54 @@
 import { motion } from 'motion/react';
-import { Quote } from 'lucide-react';
+import { ArrowUpRight, Building2 } from 'lucide-react';
+
+type CaseStudy = {
+  company: string;
+  segment: string;
+  outcome: string;
+  quote: string;
+  role: string;
+};
+
+const cases: CaseStudy[] = [
+  {
+    company: 'Cliente Retail (reemplazar nombre)',
+    segment: 'Retail multi-sede',
+    outcome: '-28% de tiempo operativo en tareas administrativas',
+    quote:
+      'Con ELEVATE unificamos procesos que antes estaban dispersos y mejoramos la velocidad de respuesta del equipo.',
+    role: 'Gerencia de Operaciones',
+  },
+  {
+    company: 'Cliente Industrial (reemplazar nombre)',
+    segment: 'Industria y logistica',
+    outcome: '+42% en trazabilidad de entregas internas',
+    quote:
+      'Pasamos de reportes reactivos a control en tiempo real para inventarios, materiales y flujos criticos.',
+    role: 'Jefatura de Planta',
+  },
+  {
+    company: 'Cliente Servicios (reemplazar nombre)',
+    segment: 'Servicios corporativos',
+    outcome: '-35% en tiempos de aprobacion y gestion documental',
+    quote:
+      'El cambio fue inmediato: mejor control, menos friccion y decisiones mucho mas rapidas en las areas clave.',
+    role: 'Direccion Administrativa',
+  },
+];
 
 export function Testimonials() {
-  const testimonials = [
-    {
-      name: 'Shayna John',
-      role: 'Directora de Operaciones',
-      quote: 'ELEVATE ha transformado por completo la forma en que gestionamos nuestros procesos. La automatización nos ha ahorrado incontables horas.',
-      image: 'https://i.pravatar.cc/150?u=a042581f4e29026024d',
-    },
-    {
-      name: 'Alexis Shane Den',
-      role: 'Gerente de RRHH',
-      quote: 'La implementación fue sorprendentemente sencilla. Ahora tenemos visibilidad total sobre el desempeño y bienestar de nuestro equipo.',
-      image: 'https://i.pravatar.cc/150?u=a042581f4e29026704d',
-    },
-    {
-      name: 'Angel Sánchez',
-      role: 'CEO',
-      quote: 'La mejor decisión tecnológica que hemos tomado. La suite modular nos permitió empezar pequeño y escalar a medida que crecíamos.',
-      image: 'https://i.pravatar.cc/150?u=a04258114e29026702d',
-    },
-  ];
-
   return (
-    <section id="testimonios" className="py-24 bg-[#0a0a0a] relative border-t border-white/5">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center max-w-3xl mx-auto mb-16">
+    <section id="testimonios" className="relative border-t border-white/5 bg-[#0a0a0a] py-24">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="mx-auto mb-16 max-w-3xl text-center">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
-            className="text-3xl md:text-4xl font-bold tracking-tight text-white mb-6"
+            className="mb-6 text-3xl font-bold tracking-tight text-white md:text-4xl"
           >
-            Lo que dicen nuestros clientes
+            Casos de impacto medible
           </motion.h2>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -43,37 +57,51 @@ export function Testimonials() {
             transition={{ duration: 0.5, delay: 0.1 }}
             className="text-lg text-gray-400"
           >
-            Descubre cómo empresas líderes están impulsando su crecimiento con ELEVATE.
+            Esta seccion ya queda preparada para publicar testimonios reales de tus clientes con su logo, nombre y metricas verificables.
           </motion.p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {testimonials.map((testimonial, index) => (
-            <motion.div
-              key={index}
+        <div className="grid grid-cols-1 gap-7 lg:grid-cols-3">
+          {cases.map((item, index) => (
+            <motion.article
+              key={item.company}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="relative elevate-panel p-8 flex flex-col h-full"
+              transition={{ duration: 0.45, delay: index * 0.08 }}
+              className="elevate-panel group flex h-full flex-col p-8"
             >
-              <Quote className="w-10 h-10 text-indigo-500/20 absolute top-6 right-6" />
-              <div className="flex items-center gap-4 mb-6">
-                <img
-                  src={testimonial.image}
-                  alt={testimonial.name}
-                  className="w-14 h-14 rounded-full object-cover border-2 border-indigo-500/30"
-                />
-                <div>
-                  <h4 className="text-lg font-semibold text-white">{testimonial.name}</h4>
-                  <p className="text-sm text-indigo-400">{testimonial.role}</p>
+              <div className="mb-6 flex items-start justify-between gap-4">
+                <div className="flex items-center gap-3">
+                  <div className="flex h-11 w-11 items-center justify-center rounded-xl border border-white/10 bg-white/5 text-indigo-200">
+                    <Building2 size={20} />
+                  </div>
+                  <div>
+                    <h3 className="text-base font-semibold text-white">{item.company}</h3>
+                    <p className="text-xs uppercase tracking-[0.14em] text-gray-400">{item.segment}</p>
+                  </div>
                 </div>
+                <ArrowUpRight className="text-indigo-300 transition group-hover:translate-x-0.5 group-hover:-translate-y-0.5" size={18} />
               </div>
-              <p className="text-gray-400 leading-relaxed italic flex-grow">
-                "{testimonial.quote}"
+
+              <p className="mb-5 rounded-xl border border-emerald-300/15 bg-emerald-400/10 px-4 py-3 text-sm font-semibold text-emerald-200">
+                Resultado: {item.outcome}
               </p>
-            </motion.div>
+
+              <p className="mb-6 flex-grow leading-relaxed text-gray-300">"{item.quote}"</p>
+
+              <p className="text-sm font-medium text-indigo-300">{item.role}</p>
+            </motion.article>
           ))}
+        </div>
+
+        <div className="mt-10 text-center">
+          <a
+            href="#contacto-form"
+            className="inline-flex items-center justify-center rounded-full border border-white/20 px-6 py-3 text-sm font-medium text-white transition hover:bg-white/5"
+          >
+            Quiero publicar mi caso con ELEVATE
+          </a>
         </div>
       </div>
     </section>

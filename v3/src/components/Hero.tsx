@@ -2,6 +2,8 @@ import { motion } from 'motion/react';
 import { ArrowRight, PlayCircle } from 'lucide-react';
 
 export function Hero() {
+  const highlights = ['Suite modular', 'Implementacion guiada', 'Escalable por etapas'];
+
   return (
     <section id="inicio" className="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
       {/* Background Effects */}
@@ -62,6 +64,22 @@ export function Hero() {
               <PlayCircle size={20} className="text-indigo-400" />
               Ver casos de uso
             </a>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 18 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.4 }}
+            className="mt-7 flex flex-wrap items-center justify-center gap-2"
+          >
+            {highlights.map((item) => (
+              <span
+                key={item}
+                className="rounded-full border border-white/10 bg-white/5 px-4 py-2 text-xs font-medium uppercase tracking-[0.12em] text-gray-200"
+              >
+                {item}
+              </span>
+            ))}
           </motion.div>
         </div>
 
